@@ -29,7 +29,7 @@ export async function searchProducts(query: string, pincode: string): Promise<Se
         nameIndex[key] = {
           name: p.name,
           brand: p.brand || '',
-          prices: { zepto: null, blinkit: null, bigbasket: null, instamart: null, flipkart: null },
+          prices: { zepto: null, blinkit: null, bigbasket: null, amazon: null, flipkart: null },
         };
         allProducts.push(nameIndex[key]);
       }
